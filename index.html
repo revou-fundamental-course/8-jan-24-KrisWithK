@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Kalkulator Matematik</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Kaltik <span>kalkulator Matematik</span></h1>
+        </header>
+        <main>
+            <!-- pembukaan -->
+            <div class="container">
+                <h2>Welcome to Kaltik</h2>
+                <br>
+                <p>Hai Sobat, Selamat datang di kaltik :)</p>
+                <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+            </div>
+            <br>
+            <nav>
+                <a href="#square-id">Persegi</a>
+                <a href="#rectangle-id">Persegi Panjang</a>
+            </nav>
+            <br><br>
+
+            <!-- Luas persegi -->
+            <section id="square-id">
+               <div class="kotak">
+                  <h1>Luas Persegi</h1>
+                    <br><br>
+                    <div class="square">
+                        <div class="insquare">
+                            <p class="sisi1">S</p>
+                            <p class="sisi2">S</p>
+                        </div>
+                        <p class="side-a">A</p>
+                        <p class="side-b">B</p>
+                        <p class="side-c">C</p>
+                        <p class="side-d">D</p>
+                    </div>
+                    <h4>Bujur Sangkar</h4>
+                    <br><br>
+               </div>
+               <summary>
+                    <p>Rumus luas persegi yaitu :</p>
+                    <h4 class="formula">L = S x S</h4>
+                    <br>
+                    <p>Di mana:<br>L = Luas<br>S = Sisi</p>
+                    <br><hr>
+                    <h2>Penghitung Luas Persegi</h2>
+                    <br>
+                    <div id="input1" class="input">
+                        <input id="sideArea" type="number" placeholder="masukkan ukuran sisi disini"/>
+                        <br>
+                        <button onclick="getData1()" class="count">Hitung</button>
+                        <br>
+                        <p id="result1a"></p>
+                        <p id="result1b"></p>
+                        <br>
+                        <button  onclick="reset1()" class="reset">Reset</button>
+                    </div>
+                </summary>
+            </section>
+
+            <!-- keliling persegi -->
+            <section>
+                <div class="kotak">
+                    <h1>Keliling Persegi</h1>
+                    <br><br>
+                    <div class="square">
+                        <div class="insquare">
+                            <p class="sisi1">S</p>
+                            <p class="sisi2">S</p>
+                        </div>
+                        <p class="side-a">A</p>
+                        <p class="side-b">B</p>
+                        <p class="side-c">C</p>
+                        <p class="side-d">D</p>
+                    </div>
+                    <h4>Bujur Sangkar</h4>
+                    <br><br>
+                </div>
+                <summary>
+                    <p>Rumus keliling persegi yaitu :</p>
+                    <h4 class="formula">K = 4 x S</h4>
+                    <br>
+                    <p>Di mana:<br>K = Keliling<br>S = Sisi</p>
+                    <br><hr>
+                    <h2>Penghitung Keliling Persegi</h2>
+                    <br>
+                    <div id="input2" class="input">
+                        <input id="sideAround" type="number" placeholder="masukkan ukuran sisi disini">
+                        <br>
+                        <button onclick="getData2()" class="count">Hitung</button>
+                        <br>
+                        <p id="result2a"></p>
+                        <p id="result2b"></p>
+                        <br>
+                        <button onclick="reset2()" class="reset">Reset</button>
+                    </div>
+                </summary>
+            </section>
+
+            <!-- Luas persegi panjang -->
+            <section id="rectangle-id">
+                <div class="kotak">
+                    <h1>Luas Persegi Panjang</h1>
+                    <br><br>
+                    <div class="rectangle">
+                        <div class="inrectangle">
+                            <p class="sisi1">P</p>
+                            <p class="sisi2"><span style="font-family: Brush Script MT, cursive;">l</span></p>
+                        </div>
+                        <p class="side-a">A</p>
+                        <p class="side-b">B</p>
+                        <p class="side-c">C</p>
+                        <p class="side-d">D</p>
+                    </div>
+                    <h4>Persegi panjang</h4>
+                    <br><br>
+                </div>
+                <summary>
+                    <p>Rumus luas persegi panjang yaitu :</p>
+                    <h4 class="formula">L = P x <span style="font-family: Brush Script MT, cursive;">l</span></h4>
+                    <br/>
+                    <p>Dimana:<br>L = Luas<br>P = Panjang<br><span style=" font-family: Brush Script MT, cursive;">l</span> = Lebar</p>
+                    <br>
+                    <hr>
+                    <h2>Penghitung Luas Persegi Panjang</h2>
+                    <br>
+                    <div id="input3" class="input">
+                        <input id="longArea" type="number" placeholder="masukkan ukuran panjang disini">
+                        <input id="widthArea" type="number" placeholder="masukkan ukuran lebar disini">
+                        <br>
+                        <button onclick="getData3()" class="count">Hitung</button>
+                        <br>
+                        <p id="result3a"></p>
+                        <p id="result3b"></p>
+                        <br>
+                        <button onclick="reset3()" class="reset">Reset</button>
+                    </div>
+                </summary>
+            </section>
+
+            <!-- keliling persegi panjang -->
+            <section>
+                <div class="kotak">
+                    <h1>Keliling Persegi Panjang</h1>
+                    <br><br>
+                    <div class="rectangle">
+                        <div class="inrectangle">
+                            <p class="sisi1">P</p>
+                            <p class="sisi2"><span style=" font-family: Brush Script MT, cursive;">l</span></p>
+                        </div>
+                        <p class="side-a">A</p>
+                        <p class="side-b">B</p>
+                        <p class="side-c">C</p>
+                        <p class="side-d">D</p>
+                    </div>
+                    <h4>Persegi Panjang</h4>
+                    <br><br>
+                </div>
+                <summary>
+                    <p>Rumus keliling persegi panjang yaitu :</p>
+                    <h4 class="formula">K = 2 ( P + <span style="font-family: Brush Script MT, cursive;">l</span> )</h4>
+                    <br>
+                    <p>Dimana:<br>K = Keliling<br>P = Panjang<br><span style="font-family: Brush Script MT, cursive;">l</span> = Lebar</p>
+                    <br>
+                    <hr>
+                    <h2>Penghitung Keliling Persegi Panjang</h2>
+                    <br>
+                    <div id="input4" class="input">
+                        <input id="longAround" type="number" placeholder="masukkan ukuran panjang disini">
+                        <input id="widthAround" type="number" placeholder="masukkan ukuran lebar disini">
+                        <br>
+                        <button onclick="getData4()"class="count">Hitung</button>
+                        <br>
+                        <p id="result4a"></p>
+                        <p id="result4b"></p>
+                        <br>
+                        <button onclick="reset4()" class="reset">Reset</button>
+                        </div>
+                </summary>
+            </section>
+        </main>
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+</html>
